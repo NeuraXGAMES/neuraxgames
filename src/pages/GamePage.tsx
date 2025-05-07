@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,7 @@ const GAMES = {
     description: "Ride down snowy slopes, perform tricks and collect coins in this exciting 3D winter sports game!",
     category: "Racing",
     url: "https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1",
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=300",
+    imageUrl: "https://static.keygames.com/2/115102/100968/1200x630/snow-rider-3d.webp",
     popularity: 5
   },
   "moto-x3m": {
@@ -24,7 +23,7 @@ const GAMES = {
     description: "Race through challenging tracks and perform stunts on your motorcycle in this action-packed game. Avoid obstacles and reach the finish line as quickly as possible.",
     category: "Racing",
     url: "https://html5gameshq.com/iframed/moto-x3m",
-    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&h=300",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsliV_oChJ_QvMNNsuGu8RMdkxxXbRSdOyxMzs4nV6n2SpzzyH",
     popularity: 5
   },
   // Other games would be defined here

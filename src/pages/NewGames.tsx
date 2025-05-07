@@ -8,7 +8,7 @@ const NEW_GAMES = [
   {
     id: "game1",
     title: "Snow Rider 3D",
-    imageUrl: "https://i.ytimg.com/vi/4gH4LCluFxM/maxresdefault.jpg",
+    imageUrl: "https://static.keygames.com/2/115102/100968/1200x630/snow-rider-3d.webp",
     category: "Racing",
     popularity: 5,
     url: "https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1"
@@ -16,7 +16,7 @@ const NEW_GAMES = [
   {
     id: "moto-x3m",
     title: "Moto X3M",
-    imageUrl: "https://assets.poki.com/motox3m/motox3m-menu.png",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsliV_oChJ_QvMNNsuGu8RMdkxxXbRSdOyxMzs4nV6n2SpzzyH",
     category: "Racing",
     popularity: 5,
     url: "https://html5gameshq.com/iframed/moto-x3m"
