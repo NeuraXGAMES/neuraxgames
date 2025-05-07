@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,12 +20,16 @@ const Hero = () => {
           Experience the future of gaming with our unblocked collection of immersive titles. Play instantly on any device.
         </p>
         <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-200">
-          <Button className="bg-neura-primary hover:bg-neura-primary/80 text-white px-8 py-6">
-            Play Now
-          </Button>
-          <Button variant="outline" className="border-neura-primary text-neura-primary hover:bg-neura-primary/10 px-8 py-6">
-            Browse Games
-          </Button>
+          <Link to="/game/game1">
+            <Button className="bg-neura-primary hover:bg-neura-primary/80 text-white px-8 py-6">
+              Play Now
+            </Button>
+          </Link>
+          <Link to="/#trending">
+            <Button variant="outline" className="border-neura-primary text-neura-primary hover:bg-neura-primary/10 px-8 py-6">
+              Browse Games
+            </Button>
+          </Link>
         </div>
         
         {/* Animated circles for visual effect */}

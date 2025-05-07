@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import GameGrid from "@/components/GameGrid";
@@ -14,6 +13,14 @@ const TRENDING_GAMES = [
     category: "Racing",
     popularity: 5,
     url: "https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1"
+  },
+  {
+    id: "moto-x3m",
+    title: "Moto X3M",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&h=300",
+    category: "Racing",
+    popularity: 5,
+    url: "https://html5gameshq.com/iframed/moto-x3m"
   },
   {
     id: "game2",

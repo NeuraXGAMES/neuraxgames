@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface FeaturedGameProps {
   title: string;
@@ -41,9 +42,11 @@ const FeaturedGame = ({ title, description, imageUrl, category }: FeaturedGamePr
               <p className="text-gray-300 mb-8">{description}</p>
               
               <div>
-                <Button className="bg-neura-primary hover:bg-neura-primary/90 text-white flex items-center gap-2">
-                  <Play className="h-4 w-4" /> Play Now
-                </Button>
+                <Link to="/game/game1">
+                  <Button className="bg-neura-primary hover:bg-neura-primary/90 text-white flex items-center gap-2">
+                    <Play className="h-4 w-4" /> Play Now
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

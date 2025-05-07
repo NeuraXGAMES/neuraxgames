@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,15 @@ const GAMES = {
     category: "Racing",
     url: "https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=300",
+    popularity: 5
+  },
+  "moto-x3m": {
+    id: "moto-x3m",
+    title: "Moto X3M",
+    description: "Race through challenging tracks and perform stunts on your motorcycle in this action-packed game. Avoid obstacles and reach the finish line as quickly as possible.",
+    category: "Racing",
+    url: "https://html5gameshq.com/iframed/moto-x3m",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&h=300",
     popularity: 5
   },
   // Other games would be defined here
@@ -52,6 +62,23 @@ const GamePage = () => {
       return () => clearTimeout(timer);
     }
   }, [gameId]);
+
+  const toggleFullscreen = () => {
+    const gameFrame = document.getElementById("game-frame");
+    if (gameFrame) {
+      if (!isFullscreen) {
+        if (gameFrame.requestFullscreen) {
+          gameFrame.requestFullscreen();
+        }
+        setIsFullscreen(true);
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+        setIsFullscreen(false);
+      }
+    }
+  };
 
   if (!gameId || !game) {
     return (
@@ -91,6 +118,7 @@ const GamePage = () => {
               <Button 
                 variant="outline"
                 className="bg-neura-primary/20 hover:bg-neura-primary/40 border border-neura-primary/40"
+                onClick={toggleFullscreen}
               >
                 <Play className="mr-2 h-4 w-4" /> Full Screen
               </Button>
@@ -108,6 +136,7 @@ const GamePage = () => {
             ) : (
               <div className="relative pb-[56.25%] h-0">
                 <iframe 
+                  id="game-frame"
                   src={game.url}
                   title={game.title}
                   className="absolute top-0 left-0 w-full h-full"
