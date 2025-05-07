@@ -9,10 +9,11 @@ import Footer from "@/components/Footer";
 const TRENDING_GAMES = [
   {
     id: "game1",
-    title: "Cyber Dash",
+    title: "Snow Rider 3D",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=300",
-    category: "Action",
+    category: "Racing",
     popularity: 5,
+    url: "https://www.hoodamath.com/mobile/games/snow-rider-3d/game.html?nocheckorient=1"
   },
   {
     id: "game2",
@@ -90,9 +91,9 @@ const Index = () => {
         <Hero />
         
         <FeaturedGame 
-          title="Cyber Racer 2049"
-          description="Race through neon-lit streets in this futuristic racing game. Beat your opponents, upgrade your vehicle, and become the ultimate Cyber Racer champion."
-          imageUrl="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=1600&h=900"
+          title="Snow Rider 3D"
+          description="Ride down snowy slopes, perform tricks and collect coins in this exciting 3D winter sports game! Test your skills across multiple challenging levels."
+          imageUrl="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=1600&h=900"
           category="Racing"
         />
         

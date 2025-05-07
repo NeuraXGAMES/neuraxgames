@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import GameCard from "./GameCard";
 
 interface GameGridProps {
@@ -10,6 +11,7 @@ interface GameGridProps {
     imageUrl: string;
     category: string;
     popularity: number;
+    url?: string;
   }[];
 }
 
@@ -28,9 +30,14 @@ const GameGrid = ({ title, subtitle, games }: GameGridProps) => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {games.map((game, index) => (
-            <div key={game.id} style={{ animationDelay: `${index * 50}ms` }}>
+            <Link 
+              to={`/game/${game.id}`} 
+              key={game.id} 
+              className="transition-transform hover:scale-105"
+              style={{ animationDelay: `${index * 50}ms` }}
+            >
               <GameCard {...game} />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
