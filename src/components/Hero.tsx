@@ -25,7 +25,7 @@ const Hero = () => {
               Play Now
             </Button>
           </Link>
-          <Link to="/#trending">
+          <Link to="/trending">
             <Button variant="outline" className="border-neura-primary text-neura-primary hover:bg-neura-primary/10 px-8 py-6">
               Browse Games
             </Button>
